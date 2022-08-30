@@ -44,7 +44,7 @@ services:
       - assets-vol:/assets:rw
 
   erpnext-python:
-    image: ${DOCKER_USERNAME}/custom-erpnext-worker:${ERPNEXT_VERSION}
+    image: motahahaddar/erpnext-python:${ERPNEXT_VERSION}
     restart: on-failure
     environment:
       - MARIADB_HOST=${MARIADB_HOST}
